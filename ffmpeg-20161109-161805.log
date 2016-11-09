@@ -1,0 +1,2860 @@
+ffmpeg started on 2016-11-09 at 16:18:05
+Report written to "ffmpeg-20161109-161805.log"
+Command line:
+ffmpeg -report -y -framerate 25 -start_number 0 -i "images/frame_%04d.jpg" -i sounds/cc0_24s.wav -f mp4 -c:v libx264 -pix_fmt yuv420p -vb 1M -c:a aac -t 2.40 outputs/ffmpeg_h264_aac.mp4
+ffmpeg version git-2016-11-08-1bbb18f Copyright (c) 2000-2016 the FFmpeg developers
+  built with Apple LLVM version 7.0.2 (clang-700.1.81)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/HEAD-1bbb18f --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-libass --enable-libfdk-aac --enable-libfreetype --enable-libmp3lame --enable-libopus --enable-libvorbis --enable-libvpx --enable-libx264 --enable-libx265 --enable-libxvid --enable-opencl --disable-lzma --enable-nonfree --enable-vda
+  libavutil      55. 35.100 / 55. 35.100
+  libavcodec     57. 66.101 / 57. 66.101
+  libavformat    57. 57.100 / 57. 57.100
+  libavdevice    57.  2.100 / 57.  2.100
+  libavfilter     6. 66.100 /  6. 66.100
+  libavresample   3.  2.  0 /  3.  2.  0
+  libswscale      4.  3.100 /  4.  3.100
+  libswresample   2.  4.100 /  2.  4.100
+  libpostproc    54.  2.100 / 54.  2.100
+Splitting the commandline.
+Reading option '-report' ... matched as option 'report' (generate a report) with argument '1'.
+Reading option '-y' ... matched as option 'y' (overwrite output files) with argument '1'.
+Reading option '-framerate' ... matched as AVOption 'framerate' with argument '25'.
+Reading option '-start_number' ... matched as AVOption 'start_number' with argument '0'.
+Reading option '-i' ... matched as input file with argument 'images/frame_%04d.jpg'.
+Reading option '-i' ... matched as input file with argument 'sounds/cc0_24s.wav'.
+Reading option '-f' ... matched as option 'f' (force format) with argument 'mp4'.
+Reading option '-c:v' ... matched as option 'c' (codec name) with argument 'libx264'.
+Reading option '-pix_fmt' ... matched as option 'pix_fmt' (set pixel format) with argument 'yuv420p'.
+Reading option '-vb' ... matched as AVOption 'vb' with argument '1M'.
+Reading option '-c:a' ... matched as option 'c' (codec name) with argument 'aac'.
+Reading option '-t' ... matched as option 't' (record or transcode "duration" seconds of audio/video) with argument '2.40'.
+Reading option 'outputs/ffmpeg_h264_aac.mp4' ... matched as output file.
+Finished splitting the commandline.
+Parsing a group of options: global .
+Applying option report (generate a report) with argument 1.
+Applying option y (overwrite output files) with argument 1.
+Successfully parsed a group of options.
+Parsing a group of options: input file images/frame_%04d.jpg.
+Successfully parsed a group of options.
+Opening an input file: images/frame_%04d.jpg.
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f89836014c0] Statistics: 46037 bytes read, 0 seeks
+[mjpeg @ 0x7f8984001200] marker=d8 avail_size_in_buf=46035
+[mjpeg @ 0x7f8984001200] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f8984001200] marker=e0 avail_size_in_buf=46033
+[mjpeg @ 0x7f8984001200] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f8984001200] marker=db avail_size_in_buf=46015
+[mjpeg @ 0x7f8984001200] index=0
+[mjpeg @ 0x7f8984001200] qscale[0]: 1
+[mjpeg @ 0x7f8984001200] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f8984001200] marker=db avail_size_in_buf=45946
+[mjpeg @ 0x7f8984001200] index=1
+[mjpeg @ 0x7f8984001200] qscale[1]: 2
+[mjpeg @ 0x7f8984001200] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f8984001200] marker=c0 avail_size_in_buf=45877
+[mjpeg @ 0x7f8984001200] Changing bps from 0 to 8
+[mjpeg @ 0x7f8984001200] sof0: picture: 690x360
+[mjpeg @ 0x7f8984001200] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f8984001200] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f8984001200] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f8984001200] pix fmt id 11111100
+[mjpeg @ 0x7f8984001200] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f8984001200] marker=c4 avail_size_in_buf=45858
+[mjpeg @ 0x7f8984001200] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f8984001200] marker=c4 avail_size_in_buf=45826
+[mjpeg @ 0x7f8984001200] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f8984001200] marker=c4 avail_size_in_buf=45739
+[mjpeg @ 0x7f8984001200] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f8984001200] marker=c4 avail_size_in_buf=45710
+[mjpeg @ 0x7f8984001200] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f8984001200] escaping removed 152 bytes
+[mjpeg @ 0x7f8984001200] marker=da avail_size_in_buf=45652
+[mjpeg @ 0x7f8984001200] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f8984001200] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f8984001200] decode frame unused 0 bytes
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f89836014c0] Statistics: 45975 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f89836016c0] Statistics: 46549 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983601720] Statistics: 46813 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f89836018a0] Statistics: 46704 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983601900] Statistics: 46961 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983601a60] Statistics: 47205 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983601ac0] Statistics: 46919 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983601c20] Statistics: 47423 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983601c80] Statistics: 47518 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983601c80] Statistics: 47012 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983601ec0] Statistics: 46665 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983601f20] Statistics: 47278 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983602080] Statistics: 47443 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f89836020e0] Statistics: 47319 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983602240] Statistics: 47424 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f89836022a0] Statistics: 47561 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f89836022a0] Statistics: 47228 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f89836024e0] Statistics: 47774 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983602540] Statistics: 47865 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f89836026a0] Statistics: 48342 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983602700] Statistics: 47997 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983602860] Statistics: 48616 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f89836028c0] Statistics: 48885 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f89836028c0] Statistics: 48757 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983602b00] Statistics: 48520 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983602b60] Statistics: 48235 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983602cc0] Statistics: 48799 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983602d20] Statistics: 48998 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983602d20] Statistics: 48819 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983602f60] Statistics: 49014 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983602fc0] Statistics: 49206 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983603120] Statistics: 48883 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983603180] Statistics: 49426 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f89836032e0] Statistics: 49571 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983603340] Statistics: 49183 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983603340] Statistics: 48728 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983603580] Statistics: 49485 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f89836035e0] Statistics: 49638 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983603740] Statistics: 49697 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f89836037a0] Statistics: 49830 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983603900] Statistics: 50133 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983603960] Statistics: 49823 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983603960] Statistics: 50316 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983603ba0] Statistics: 50337 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983603c00] Statistics: 50660 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983603d60] Statistics: 50349 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983603dc0] Statistics: 50905 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983603f20] Statistics: 51151 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983603f80] Statistics: 50825 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983603f80] Statistics: 51777 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f89836041c0] Statistics: 51411 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983604220] Statistics: 52027 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983604380] Statistics: 52218 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f89836043e0] Statistics: 52108 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983604540] Statistics: 52428 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f89836045a0] Statistics: 52596 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f89836045a0] Statistics: 52291 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f89836047e0] Statistics: 52560 bytes read, 0 seeks
+[file @ 0x7f89836011e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0x7f8983604840] Statistics: 52562 bytes read, 0 seeks
+Input #0, image2, from 'images/frame_%04d.jpg':
+  Duration: 00:00:02.40, start: 0.000000, bitrate: N/A
+    Stream #0:0, 60, 1/25: Video: mjpeg, yuvj444p(pc, bt470bg/unknown/unknown), 690x360 [SAR 28:28 DAR 23:12], 25 fps, 25 tbr, 25 tbn, 25 tbc
+Successfully opened the file.
+Parsing a group of options: input file sounds/cc0_24s.wav.
+Successfully parsed a group of options.
+Opening an input file: sounds/cc0_24s.wav.
+[file @ 0x7f8983604a40] Setting default whitelist 'file,crypto'
+[wav @ 0x7f898401ce00] Format wav probed with size=2048 and score=99
+[wav @ 0x7f898401ce00] Before avformat_find_stream_info() pos: 44 bytes read:99218 seeks:3 nb_streams:1
+[wav @ 0x7f898401ce00] probing stream 0 pp:32
+[wav @ 0x7f898401ce00] Probe with size=4096, packets=2469 detected mp3 with score=1
+[wav @ 0x7f898401ce00] probing stream 0 pp:31
+[wav @ 0x7f898401ce00] Probe with size=8192, packets=2470 detected mp3 with score=1
+[wav @ 0x7f898401ce00] probing stream 0 pp:30
+[wav @ 0x7f898401ce00] probing stream 0 pp:29
+[wav @ 0x7f898401ce00] Probe with size=16384, packets=2472 detected mp3 with score=1
+[wav @ 0x7f898401ce00] probing stream 0 pp:28
+[wav @ 0x7f898401ce00] probing stream 0 pp:27
+[wav @ 0x7f898401ce00] probing stream 0 pp:26
+[wav @ 0x7f898401ce00] probing stream 0 pp:25
+[wav @ 0x7f898401ce00] probing stream 0 pp:24
+[wav @ 0x7f898401ce00] probing stream 0 pp:23
+[wav @ 0x7f898401ce00] probing stream 0 pp:22
+[wav @ 0x7f898401ce00] probing stream 0 pp:21
+[wav @ 0x7f898401ce00] probing stream 0 pp:20
+[wav @ 0x7f898401ce00] probing stream 0 pp:19
+[wav @ 0x7f898401ce00] probing stream 0 pp:18
+[wav @ 0x7f898401ce00] probing stream 0 pp:17
+[wav @ 0x7f898401ce00] probing stream 0 pp:16
+[wav @ 0x7f898401ce00] probing stream 0 pp:15
+[wav @ 0x7f898401ce00] probing stream 0 pp:14
+[wav @ 0x7f898401ce00] probing stream 0 pp:13
+[wav @ 0x7f898401ce00] probing stream 0 pp:12
+[wav @ 0x7f898401ce00] probing stream 0 pp:11
+[wav @ 0x7f898401ce00] probing stream 0 pp:10
+[wav @ 0x7f898401ce00] probing stream 0 pp:9
+[wav @ 0x7f898401ce00] probing stream 0 pp:8
+[wav @ 0x7f898401ce00] probing stream 0 pp:7
+[wav @ 0x7f898401ce00] probing stream 0 pp:6
+[wav @ 0x7f898401ce00] probing stream 0 pp:5
+[wav @ 0x7f898401ce00] probing stream 0 pp:4
+[wav @ 0x7f898401ce00] probing stream 0 pp:3
+[wav @ 0x7f898401ce00] probing stream 0 pp:2
+[wav @ 0x7f898401ce00] probing stream 0 pp:1
+[wav @ 0x7f898401ce00] probed stream 0
+[wav @ 0x7f898401ce00] parser not found for codec pcm_s16le, packets or times may be invalid.
+[wav @ 0x7f898401ce00] All info found
+[wav @ 0x7f898401ce00] After avformat_find_stream_info() pos: 204844 bytes read:328594 seeks:3 frames:50
+Guessed Channel Layout for Input Stream #1.0 : stereo
+Input #1, wav, from 'sounds/cc0_24s.wav':
+  Metadata:
+    title           : Revitalize 1
+    album           : Revitalize Music Contest
+    artist          : {AN} Eel
+    comment         : URL: http://freemusicarchive.org/music/AN_Eel/Revitalize_Music_Contest/Revitalize_1_
+                    : Comments: http://freemusicarchive.org/_
+                    : Curator: _
+                    : Copyright: CC0 1.0 Universal: http://creativecommons.org/publicdomain/zero/1.0/
+    date            : 2013-04-29T19:15:09
+    track           : 0
+  Duration: 00:00:02.40, bitrate: 1414 kb/s
+    Stream #1:0, 50, 1/44100: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 44100 Hz, stereo, s16, 1411 kb/s
+Successfully opened the file.
+Parsing a group of options: output file outputs/ffmpeg_h264_aac.mp4.
+Applying option f (force format) with argument mp4.
+Applying option c:v (codec name) with argument libx264.
+Applying option pix_fmt (set pixel format) with argument yuv420p.
+Applying option c:a (codec name) with argument aac.
+Applying option t (record or transcode "duration" seconds of audio/video) with argument 2.40.
+Successfully parsed a group of options.
+Opening an output file: outputs/ffmpeg_h264_aac.mp4.
+[file @ 0x7f8983702720] Setting default whitelist 'file,crypto'
+Successfully opened the file.
+[graph 0 input from stream 0:0 @ 0x7f8983702920] Setting 'video_size' to value '690x360'
+[graph 0 input from stream 0:0 @ 0x7f8983702920] Setting 'pix_fmt' to value '14'
+[graph 0 input from stream 0:0 @ 0x7f8983702920] Setting 'time_base' to value '1/25'
+[graph 0 input from stream 0:0 @ 0x7f8983702920] Setting 'pixel_aspect' to value '28/28'
+[graph 0 input from stream 0:0 @ 0x7f8983702920] Setting 'sws_param' to value 'flags=2'
+[graph 0 input from stream 0:0 @ 0x7f8983702920] Setting 'frame_rate' to value '25/1'
+[graph 0 input from stream 0:0 @ 0x7f8983702920] w:690 h:360 pixfmt:yuvj444p tb:1/25 fr:25/1 sar:28/28 sws_param:flags=2
+[format @ 0x7f8983702c60] compat: called with args=[yuv420p]
+[format @ 0x7f8983702c60] Setting 'pix_fmts' to value 'yuv420p'
+[auto-inserted scaler 0 @ 0x7f8983703160] Setting 'flags' to value 'bicubic'
+[auto-inserted scaler 0 @ 0x7f8983703160] w:iw h:ih flags:'bicubic' interl:0
+[format @ 0x7f8983702c60] auto-inserting filter 'auto-inserted scaler 0' between the filter 'Parsed_null_0' and the filter 'format'
+[AVFilterGraph @ 0x7f8983700400] query_formats: 5 queried, 3 merged, 1 already done, 0 delayed
+[swscaler @ 0x7f8984857e00] deprecated pixel format used, make sure you did set range correctly
+[auto-inserted scaler 0 @ 0x7f8983703160] w:690 h:360 fmt:yuvj444p sar:28/28 -> w:690 h:360 fmt:yuv420p sar:1/1 flags:0x4
+[graph 1 input from stream 1:0 @ 0x7f8983605b00] Setting 'time_base' to value '1/44100'
+[graph 1 input from stream 1:0 @ 0x7f8983605b00] Setting 'sample_rate' to value '44100'
+[graph 1 input from stream 1:0 @ 0x7f8983605b00] Setting 'sample_fmt' to value 's16'
+[graph 1 input from stream 1:0 @ 0x7f8983605b00] Setting 'channel_layout' to value '0x3'
+[graph 1 input from stream 1:0 @ 0x7f8983605b00] tb:1/44100 samplefmt:s16 samplerate:44100 chlayout:0x3
+[audio format for output stream 0:1 @ 0x7f8983606000] Setting 'sample_fmts' to value 'fltp'
+[audio format for output stream 0:1 @ 0x7f8983606000] Setting 'sample_rates' to value '96000|88200|64000|48000|44100|32000|24000|22050|16000|12000|11025|8000|7350'
+[audio format for output stream 0:1 @ 0x7f8983606000] auto-inserting filter 'auto-inserted resampler 0' between the filter 'Parsed_anull_0' and the filter 'audio format for output stream 0:1'
+[AVFilterGraph @ 0x7f89836004a0] query_formats: 5 queried, 9 merged, 3 already done, 0 delayed
+[auto-inserted resampler 0 @ 0x7f8983606bc0] [SWR @ 0x7f89842f3400] Using s16p internally between filters
+[auto-inserted resampler 0 @ 0x7f8983606bc0] ch:2 chl:stereo fmt:s16 r:44100Hz -> ch:2 chl:stereo fmt:fltp r:44100Hz
+[libx264 @ 0x7f8984026600] using mv_range_thread = 24
+[libx264 @ 0x7f8984026600] using SAR=1/1
+[libx264 @ 0x7f8984026600] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX
+[libx264 @ 0x7f8984026600] profile High, level 3.0
+[libx264 @ 0x7f8984026600] 264 - core 148 r2699 a5e06b9 - H.264/MPEG-4 AVC codec - Copyleft 2003-2016 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=abr mbtree=1 bitrate=1000 ratetol=1.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'outputs/ffmpeg_h264_aac.mp4':
+  Metadata:
+    encoder         : Lavf57.57.100
+    Stream #0:0, 0, 1/12800: Video: h264 (libx264) ([33][0][0][0] / 0x0021), yuv420p, 690x360 [SAR 1:1 DAR 23:12], q=-1--1, 1000 kb/s, 25 fps, 12800 tbn, 25 tbc
+    Metadata:
+      encoder         : Lavc57.66.101 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/1000000 buffer size: 0 vbv_delay: -1
+    Stream #0:1, 0, 1/44100: Audio: aac (LC) ([64][0][0][0] / 0x0040), 44100 Hz, stereo, fltp, 128 kb/s
+    Metadata:
+      encoder         : Lavc57.66.101 aac
+Stream mapping:
+  Stream #0:0 -> #0:0 (mjpeg (native) -> h264 (libx264))
+  Stream #1:0 -> #0:1 (pcm_s16le (native) -> aac (native))
+Press [q] to stop, [?] for help
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[image2 @ 0x7f8984000000] Thread message queue blocking; consider raising the thread_queue_size option (current value: 8)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=46035
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=46033
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=46015
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=45946
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=45877
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=45858
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=45826
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=212
+[mjpeg @ 0x7f898401be00] marker parser used 85 bytes (680 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=45739
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=8
+[mjpeg @ 0x7f898401be00] marker parser used 27 bytes (216 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=45710
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=210
+[mjpeg @ 0x7f898401be00] marker parser used 56 bytes (448 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 152 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=45652
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 45499 bytes (363991 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+Clipping frame in rate conversion by 0.000008
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=45973
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=45971
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=45953
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=45884
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=45815
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=45796
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=45764
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=226
+[mjpeg @ 0x7f898401be00] marker parser used 89 bytes (712 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=45673
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=9
+[mjpeg @ 0x7f898401be00] marker parser used 28 bytes (224 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=45643
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 63 bytes (504 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 130 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=45578
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 45447 bytes (363572 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=46547
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=46545
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=46527
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=46458
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=46389
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46370
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46338
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=226
+[mjpeg @ 0x7f898401be00] marker parser used 90 bytes (720 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46246
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=9
+[mjpeg @ 0x7f898401be00] marker parser used 28 bytes (224 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46216
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=210
+[mjpeg @ 0x7f898401be00] marker parser used 63 bytes (504 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 153 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=46151
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 45997 bytes (367974 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=46811
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=46809
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=46791
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=46722
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=46653
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46634
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46602
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=226
+[mjpeg @ 0x7f898401be00] marker parser used 86 bytes (688 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46514
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=9
+[mjpeg @ 0x7f898401be00] marker parser used 28 bytes (224 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46484
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=210
+[mjpeg @ 0x7f898401be00] marker parser used 65 bytes (520 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 178 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=46417
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 46238 bytes (369897 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=46702
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=46700
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=46682
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=46613
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=46544
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46525
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46493
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 91 bytes (728 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46400
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=9
+[mjpeg @ 0x7f898401be00] marker parser used 28 bytes (224 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46370
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=210
+[mjpeg @ 0x7f898401be00] marker parser used 65 bytes (520 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 163 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=46303
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 46139 bytes (369111 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=46959
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=46957
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=46939
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=46870
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=46801
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46782
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46750
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 90 bytes (720 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46658
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=9
+[mjpeg @ 0x7f898401be00] marker parser used 28 bytes (224 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46628
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=210
+[mjpeg @ 0x7f898401be00] marker parser used 65 bytes (520 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 162 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=46561
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 46398 bytes (371181 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=47203
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=47201
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=47183
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=47114
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=47045
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47026
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46994
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 89 bytes (712 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46903
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=9
+[mjpeg @ 0x7f898401be00] marker parser used 28 bytes (224 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46873
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 66 bytes (528 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 155 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=46805
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 46649 bytes (373192 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=46917
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=46915
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=46897
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=46828
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=46759
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46740
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46708
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 90 bytes (720 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46616
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=9
+[mjpeg @ 0x7f898401be00] marker parser used 28 bytes (224 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46586
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 66 bytes (528 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 175 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=46518
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 46342 bytes (370733 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=47421
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=47419
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=47401
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=47332
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=47263
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47244
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47212
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 87 bytes (696 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47123
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=9
+[mjpeg @ 0x7f898401be00] marker parser used 28 bytes (224 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47093
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 66 bytes (528 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 163 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=47025
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 46861 bytes (374882 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=47516
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=47514
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=47496
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=47427
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=47358
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47339
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47307
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 88 bytes (704 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47217
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=9
+[mjpeg @ 0x7f898401be00] marker parser used 28 bytes (224 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47187
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 152 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=47118
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 46965 bytes (375719 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=47010
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=47008
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=46990
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=46921
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=46852
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46833
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46801
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 90 bytes (720 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46709
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=9
+[mjpeg @ 0x7f898401be00] marker parser used 28 bytes (224 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46679
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 66 bytes (528 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 143 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=46611
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 46467 bytes (371733 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=46663
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=46661
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=46643
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=46574
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=46505
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46486
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46454
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 94 bytes (752 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46358
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=9
+[mjpeg @ 0x7f898401be00] marker parser used 28 bytes (224 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46328
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 66 bytes (528 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 150 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=46260
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 46109 bytes (368865 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=47276
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=47274
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=47256
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=47187
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=47118
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47099
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47067
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 94 bytes (752 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46971
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=9
+[mjpeg @ 0x7f898401be00] marker parser used 28 bytes (224 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46941
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 66 bytes (528 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 132 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=46873
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 46740 bytes (373916 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=47441
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=47439
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=47421
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=47352
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=47283
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47264
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47232
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 90 bytes (720 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47140
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=9
+[mjpeg @ 0x7f898401be00] marker parser used 28 bytes (224 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47110
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 66 bytes (528 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 149 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=47042
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 46892 bytes (375135 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=47317
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=47315
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=47297
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=47228
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=47159
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47140
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47108
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 94 bytes (752 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47012
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=9
+[mjpeg @ 0x7f898401be00] marker parser used 28 bytes (224 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46982
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 66 bytes (528 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 133 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=46914
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 46780 bytes (374238 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=47422
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=47420
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=47402
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=47333
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=47264
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47245
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47213
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 93 bytes (744 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47118
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=9
+[mjpeg @ 0x7f898401be00] marker parser used 28 bytes (224 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47088
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 72 bytes (576 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 163 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=47014
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 46850 bytes (374799 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=47559
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=47557
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=47539
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=47470
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=47401
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47382
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47350
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 92 bytes (736 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47256
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=9
+[mjpeg @ 0x7f898401be00] marker parser used 28 bytes (224 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47226
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 72 bytes (576 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 143 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=47152
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 47008 bytes (376061 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=47226
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=47224
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=47206
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=47137
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=47068
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47049
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47017
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 95 bytes (760 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46920
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=9
+[mjpeg @ 0x7f898401be00] marker parser used 28 bytes (224 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=46890
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 72 bytes (576 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 147 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=46816
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 46668 bytes (373339 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=47772
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=47770
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=47752
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=47683
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=47614
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47595
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47563
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 92 bytes (736 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47469
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=9
+[mjpeg @ 0x7f898401be00] marker parser used 28 bytes (224 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47439
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 72 bytes (576 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 153 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=47365
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 47211 bytes (377688 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=47863
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=47861
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=47843
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=47774
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=47705
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47686
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47654
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 92 bytes (736 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47560
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=9
+[mjpeg @ 0x7f898401be00] marker parser used 28 bytes (224 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47530
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 72 bytes (576 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 162 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=47456
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 47293 bytes (378341 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=48340
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=48338
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=48320
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=48251
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=48182
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48163
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48131
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 93 bytes (744 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48036
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=9
+[mjpeg @ 0x7f898401be00] marker parser used 28 bytes (224 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48006
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 72 bytes (576 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 148 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=47932
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 47783 bytes (382259 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=47995
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=47993
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=47975
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=47906
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=47837
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47818
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47786
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 96 bytes (768 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47688
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=9
+[mjpeg @ 0x7f898401be00] marker parser used 28 bytes (224 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47658
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 72 bytes (576 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 156 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=47584
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 47427 bytes (379411 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=48614
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=48612
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=48594
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=48525
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=48456
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48437
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48405
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 93 bytes (744 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48310
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=9
+[mjpeg @ 0x7f898401be00] marker parser used 28 bytes (224 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48280
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 72 bytes (576 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 167 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=48206
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 48038 bytes (384303 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=48883
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=48881
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=48863
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=48794
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=48725
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48706
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48674
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 93 bytes (744 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48579
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=9
+[mjpeg @ 0x7f898401be00] marker parser used 28 bytes (224 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48549
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 72 bytes (576 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 153 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=48475
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 48321 bytes (386563 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=48755
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=48753
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=48735
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=48666
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=48597
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48578
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48546
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 98 bytes (784 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48446
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=9
+[mjpeg @ 0x7f898401be00] marker parser used 28 bytes (224 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48416
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 72 bytes (576 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 141 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=48342
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 48200 bytes (385595 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=48518
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=48516
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=48498
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=48429
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=48360
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48341
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48309
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 95 bytes (760 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48212
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=9
+[mjpeg @ 0x7f898401be00] marker parser used 28 bytes (224 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48182
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 72 bytes (576 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 116 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=48108
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 47991 bytes (383924 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=48233
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=48231
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=48213
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=48144
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=48075
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48056
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48024
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 95 bytes (760 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47927
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=9
+[mjpeg @ 0x7f898401be00] marker parser used 28 bytes (224 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=47897
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 72 bytes (576 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 142 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=47823
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 47680 bytes (381436 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=48797
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=48795
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=48777
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=48708
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=48639
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48620
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48588
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 99 bytes (792 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48487
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=9
+[mjpeg @ 0x7f898401be00] marker parser used 28 bytes (224 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48457
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 72 bytes (576 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 115 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=48383
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 48267 bytes (386132 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=48996
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=48994
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=48976
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=48907
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=48838
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48819
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48787
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 96 bytes (768 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48689
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=9
+[mjpeg @ 0x7f898401be00] marker parser used 28 bytes (224 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48659
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 72 bytes (576 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 139 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=48585
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 48445 bytes (387556 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=48817
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=48815
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=48797
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=48728
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=48659
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48640
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48608
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 100 bytes (800 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48506
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=10
+[mjpeg @ 0x7f898401be00] marker parser used 29 bytes (232 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48475
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 72 bytes (576 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 137 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=48401
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 48263 bytes (386100 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=49012
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=49010
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=48992
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=48923
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=48854
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48835
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48803
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 100 bytes (800 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48701
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=10
+[mjpeg @ 0x7f898401be00] marker parser used 29 bytes (232 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48670
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 73 bytes (584 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 124 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=48595
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 48470 bytes (387756 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=49204
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=49202
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=49184
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=49115
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=49046
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49027
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48995
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 97 bytes (776 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48896
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=10
+[mjpeg @ 0x7f898401be00] marker parser used 29 bytes (232 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48865
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 73 bytes (584 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 134 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=48790
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 48655 bytes (389233 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=48881
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=48879
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=48861
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=48792
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=48723
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48704
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48672
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 99 bytes (792 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48571
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=10
+[mjpeg @ 0x7f898401be00] marker parser used 29 bytes (232 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48540
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 73 bytes (584 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 162 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=48465
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 48302 bytes (386409 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=49424
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=49422
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=49404
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=49335
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=49266
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49247
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49215
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 97 bytes (776 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49116
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=10
+[mjpeg @ 0x7f898401be00] marker parser used 29 bytes (232 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49085
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 73 bytes (584 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 145 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=49010
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 48864 bytes (390912 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=49569
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=49567
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=49549
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=49480
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=49411
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49392
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49360
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 97 bytes (776 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49261
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=10
+[mjpeg @ 0x7f898401be00] marker parser used 29 bytes (232 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49230
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 73 bytes (584 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 159 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=49155
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 48995 bytes (391954 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=49181
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=49179
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=49161
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=49092
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=49023
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49004
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48972
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 98 bytes (784 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48872
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=10
+[mjpeg @ 0x7f898401be00] marker parser used 29 bytes (232 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48841
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 73 bytes (584 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 159 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=48766
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 48606 bytes (388843 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=48726
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=48724
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=48706
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=48637
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=48568
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48549
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48517
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 99 bytes (792 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48416
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=10
+[mjpeg @ 0x7f898401be00] marker parser used 29 bytes (232 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=48385
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 74 bytes (592 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 156 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=48309
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 48152 bytes (385212 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=49483
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=49481
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=49463
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=49394
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=49325
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49306
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49274
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 101 bytes (808 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49171
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=10
+[mjpeg @ 0x7f898401be00] marker parser used 29 bytes (232 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49140
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 73 bytes (584 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 142 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=49065
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 48922 bytes (391370 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=49636
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=49634
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=49616
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=49547
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=49478
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49459
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49427
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 98 bytes (784 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49327
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=10
+[mjpeg @ 0x7f898401be00] marker parser used 29 bytes (232 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49296
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 73 bytes (584 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 153 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=49221
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 49067 bytes (392535 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=49695
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=49693
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=49675
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=49606
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=49537
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49518
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49486
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 101 bytes (808 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49383
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=10
+[mjpeg @ 0x7f898401be00] marker parser used 29 bytes (232 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49352
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 73 bytes (584 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 164 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=49277
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 49112 bytes (392889 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=49828
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=49826
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=49808
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=49739
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=49670
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49651
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49619
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 101 bytes (808 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49516
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=10
+[mjpeg @ 0x7f898401be00] marker parser used 29 bytes (232 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49485
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 73 bytes (584 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 171 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=49410
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 49238 bytes (393904 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=50131
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=50129
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=50111
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=50042
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=49973
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49954
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49922
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 98 bytes (784 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49822
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=10
+[mjpeg @ 0x7f898401be00] marker parser used 29 bytes (232 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49791
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 73 bytes (584 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 155 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=49716
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 49560 bytes (396474 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=49821
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=49819
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=49801
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=49732
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=49663
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49644
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49612
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 101 bytes (808 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49509
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=10
+[mjpeg @ 0x7f898401be00] marker parser used 29 bytes (232 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49478
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 74 bytes (592 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 159 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=49402
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 49242 bytes (393929 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=50314
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=50312
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=50294
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=50225
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=50156
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=50137
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=50105
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 98 bytes (784 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=50005
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=10
+[mjpeg @ 0x7f898401be00] marker parser used 29 bytes (232 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49974
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 73 bytes (584 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 154 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=49899
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 49744 bytes (397945 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=50335
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=50333
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=50315
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=50246
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=50177
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=50158
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=50126
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 99 bytes (792 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=50025
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=10
+[mjpeg @ 0x7f898401be00] marker parser used 29 bytes (232 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=49994
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 74 bytes (592 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 163 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=49918
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 49754 bytes (398027 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=50658
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=50656
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=50638
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=50569
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=50500
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=50481
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=50449
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 102 bytes (816 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=50345
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=10
+[mjpeg @ 0x7f898401be00] marker parser used 29 bytes (232 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=50314
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 75 bytes (600 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 142 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=50237
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 50094 bytes (400750 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=50347
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=50345
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=50327
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=50258
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=50189
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=50170
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=50138
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 102 bytes (816 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=50034
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=10
+[mjpeg @ 0x7f898401be00] marker parser used 29 bytes (232 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=50003
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 76 bytes (608 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 163 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=49925
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 49761 bytes (398088 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=50903
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=50901
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=50883
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=50814
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=50745
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=50726
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=50694
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 102 bytes (816 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=50590
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=10
+[mjpeg @ 0x7f898401be00] marker parser used 29 bytes (232 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=50559
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 75 bytes (600 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 151 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=50482
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 50330 bytes (402635 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=51149
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=51147
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=51129
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=51060
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=50991
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=50972
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=50940
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 102 bytes (816 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=50836
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=10
+[mjpeg @ 0x7f898401be00] marker parser used 29 bytes (232 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=50805
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 75 bytes (600 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 167 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=50728
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 50560 bytes (404477 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=50823
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=50821
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=50803
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=50734
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=50665
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=50646
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=50614
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 105 bytes (840 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=50507
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=10
+[mjpeg @ 0x7f898401be00] marker parser used 29 bytes (232 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=50476
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 76 bytes (608 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 157 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=50398
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 50240 bytes (401916 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=51775
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=51773
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=51755
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=51686
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=51617
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=51598
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=51566
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 97 bytes (776 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=51467
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=10
+[mjpeg @ 0x7f898401be00] marker parser used 29 bytes (232 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=51436
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 75 bytes (600 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 149 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=51359
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 51209 bytes (409669 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+[libx264 @ 0x7f8984026600] frame=   0 QP=15.49 NAL=3 Slice:I Poc:0   I:1012 P:0    SKIP:0    size=20344 bytes
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=51409
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=51407
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=51389
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=51320
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=51251
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=51232
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=51200
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 100 bytes (800 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=51098
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=10
+[mjpeg @ 0x7f898401be00] marker parser used 29 bytes (232 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=51067
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 75 bytes (600 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 140 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=50990
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 50849 bytes (406792 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+[libx264 @ 0x7f8984026600] frame=   1 QP=16.09 NAL=2 Slice:P Poc:8   I:15   P:83   SKIP:914  size=896 bytes
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=52025
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=52023
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=52005
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=51936
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=51867
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=51848
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=51816
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 97 bytes (776 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=51717
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=10
+[mjpeg @ 0x7f898401be00] marker parser used 29 bytes (232 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=51686
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 76 bytes (608 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 161 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=51608
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 51446 bytes (411566 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+[libx264 @ 0x7f8984026600] frame=   2 QP=26.05 NAL=2 Slice:B Poc:4   I:3    P:26   SKIP:978  size=223 bytes
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=52216
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=52214
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=52196
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=52127
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=52058
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=52039
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=52007
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 97 bytes (776 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=51908
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=10
+[mjpeg @ 0x7f898401be00] marker parser used 29 bytes (232 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=51877
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 76 bytes (608 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 150 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=51799
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 51648 bytes (413179 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+[libx264 @ 0x7f8984026600] frame=   3 QP=28.54 NAL=0 Slice:B Poc:2   I:7    P:19   SKIP:983  size=143 bytes
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=52106
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=52104
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=52086
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=52017
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=51948
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=51929
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=51897
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 100 bytes (800 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=51795
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=10
+[mjpeg @ 0x7f898401be00] marker parser used 29 bytes (232 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=51764
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 76 bytes (608 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 154 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=51686
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 51531 bytes (412245 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+[libx264 @ 0x7f8984026600] frame=   4 QP=28.25 NAL=0 Slice:B Poc:6   I:3    P:15   SKIP:991  size=155 bytes
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=52426
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=52424
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=52406
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=52337
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=52268
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=52249
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=52217
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 98 bytes (784 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=52117
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=10
+[mjpeg @ 0x7f898401be00] marker parser used 29 bytes (232 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=52086
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 76 bytes (608 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 167 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=52008
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 51840 bytes (414717 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+[libx264 @ 0x7f8984026600] frame=   5 QP=15.23 NAL=2 Slice:P Poc:16  I:4    P:91   SKIP:917  size=807 bytes
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=52594
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=52592
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=52574
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=52505
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=52436
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=52417
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=52385
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 97 bytes (776 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=52286
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=10
+[mjpeg @ 0x7f898401be00] marker parser used 29 bytes (232 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=52255
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 76 bytes (608 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 162 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=52177
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 52014 bytes (416109 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+[libx264 @ 0x7f8984026600] frame=   6 QP=26.76 NAL=2 Slice:B Poc:12  I:3    P:18   SKIP:986  size=166 bytes
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=52289
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=52287
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=52269
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=52200
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=52131
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=52112
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=52080
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 97 bytes (776 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=51981
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=10
+[mjpeg @ 0x7f898401be00] marker parser used 29 bytes (232 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=51950
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 76 bytes (608 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 150 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=51872
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 51721 bytes (413768 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+[libx264 @ 0x7f8984026600] frame=   7 QP=28.34 NAL=0 Slice:B Poc:10  I:2    P:16   SKIP:991  size=160 bytes
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=52558
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=52556
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=52538
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=52469
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=52400
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=52381
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=52349
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 97 bytes (776 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=52250
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=10
+[mjpeg @ 0x7f898401be00] marker parser used 29 bytes (232 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=52219
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 76 bytes (608 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 144 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=52141
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 51996 bytes (415962 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+[libx264 @ 0x7f8984026600] frame=   8 QP=28.35 NAL=0 Slice:B Poc:14  I:2    P:14   SKIP:992  size=208 bytes
+[mjpeg @ 0x7f898401be00] marker=d8 avail_size_in_buf=52560
+[mjpeg @ 0x7f898401be00] marker parser used 0 bytes (0 bits)
+[mjpeg @ 0x7f898401be00] marker=e0 avail_size_in_buf=52558
+[mjpeg @ 0x7f898401be00] marker parser used 16 bytes (128 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=52540
+[mjpeg @ 0x7f898401be00] index=0
+[mjpeg @ 0x7f898401be00] qscale[0]: 1
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=db avail_size_in_buf=52471
+[mjpeg @ 0x7f898401be00] index=1
+[mjpeg @ 0x7f898401be00] qscale[1]: 2
+[mjpeg @ 0x7f898401be00] marker parser used 67 bytes (536 bits)
+[mjpeg @ 0x7f898401be00] marker=c0 avail_size_in_buf=52402
+[mjpeg @ 0x7f898401be00] sof0: picture: 690x360
+[mjpeg @ 0x7f898401be00] component 0 1:1 id: 0 quant:0
+[mjpeg @ 0x7f898401be00] component 1 1:1 id: 1 quant:1
+[mjpeg @ 0x7f898401be00] component 2 1:1 id: 2 quant:1
+[mjpeg @ 0x7f898401be00] pix fmt id 11111100
+[mjpeg @ 0x7f898401be00] marker parser used 17 bytes (136 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=52383
+[mjpeg @ 0x7f898401be00] class=0 index=0 nb_codes=11
+[mjpeg @ 0x7f898401be00] marker parser used 30 bytes (240 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=52351
+[mjpeg @ 0x7f898401be00] class=1 index=0 nb_codes=242
+[mjpeg @ 0x7f898401be00] marker parser used 97 bytes (776 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=52252
+[mjpeg @ 0x7f898401be00] class=0 index=1 nb_codes=10
+[mjpeg @ 0x7f898401be00] marker parser used 29 bytes (232 bits)
+[mjpeg @ 0x7f898401be00] marker=c4 avail_size_in_buf=52221
+[mjpeg @ 0x7f898401be00] class=1 index=1 nb_codes=241
+[mjpeg @ 0x7f898401be00] marker parser used 76 bytes (608 bits)
+[mjpeg @ 0x7f898401be00] escaping removed 168 bytes
+[mjpeg @ 0x7f898401be00] marker=da avail_size_in_buf=52143
+[mjpeg @ 0x7f898401be00] component: 0
+[mjpeg @ 0x7f898401be00] component: 1
+[mjpeg @ 0x7f898401be00] component: 2
+[mjpeg @ 0x7f898401be00] marker parser used 51974 bytes (415786 bits)
+[mjpeg @ 0x7f898401be00] marker=d9 avail_size_in_buf=0
+[mjpeg @ 0x7f898401be00] decode frame unused 0 bytes
+[libx264 @ 0x7f8984026600] frame=   9 QP=14.59 NAL=2 Slice:P Poc:24  I:5    P:77   SKIP:930  size=957 bytes
+[output stream 0:0 @ 0x7f89837029c0] EOF on sink link output stream 0:0:default.
+[output stream 0:1 @ 0x7f8983605e80] EOF on sink link output stream 0:1:default.
+No more output streams to write to, finishing.
+[libx264 @ 0x7f8984026600] frame=  10 QP=25.58 NAL=2 Slice:B Poc:20  I:3    P:30   SKIP:976  size=174 bytes
+[libx264 @ 0x7f8984026600] frame=  11 QP=27.57 NAL=0 Slice:B Poc:18  I:1    P:23   SKIP:983  size=163 bytes
+[libx264 @ 0x7f8984026600] frame=  12 QP=26.30 NAL=0 Slice:B Poc:22  I:8    P:9    SKIP:994  size=90 bytes
+[libx264 @ 0x7f8984026600] frame=  13 QP=10.23 NAL=2 Slice:P Poc:32  I:24   P:918  SKIP:70   size=13578 bytes
+[libx264 @ 0x7f8984026600] frame=  14 QP=22.29 NAL=2 Slice:B Poc:28  I:2    P:79   SKIP:926  size=394 bytes
+[libx264 @ 0x7f8984026600] frame=  15 QP=25.75 NAL=0 Slice:B Poc:26  I:1    P:140  SKIP:868  size=302 bytes
+[libx264 @ 0x7f8984026600] frame=  16 QP=23.16 NAL=0 Slice:B Poc:30  I:4    P:28   SKIP:976  size=294 bytes
+[libx264 @ 0x7f8984026600] frame=  17 QP=6.69 NAL=2 Slice:P Poc:38  I:7    P:964  SKIP:41   size=23335 bytes
+[libx264 @ 0x7f8984026600] frame=  18 QP=18.59 NAL=2 Slice:B Poc:34  I:6    P:45   SKIP:958  size=334 bytes
+[libx264 @ 0x7f8984026600] frame=  19 QP=19.34 NAL=0 Slice:B Poc:36  I:2    P:21   SKIP:984  size=377 bytes
+[libx264 @ 0x7f8984026600] frame=  20 QP=6.46 NAL=2 Slice:P Poc:46  I:8    P:428  SKIP:576  size=5155 bytes
+[libx264 @ 0x7f8984026600] frame=  21 QP=14.67 NAL=2 Slice:B Poc:42  I:5    P:221  SKIP:783  size=431 bytes
+[libx264 @ 0x7f8984026600] frame=  22 QP=18.61 NAL=0 Slice:B Poc:40  I:1    P:235  SKIP:772  size=422 bytes
+[libx264 @ 0x7f8984026600] frame=  23 QP=18.97 NAL=0 Slice:B Poc:44  I:1    P:100  SKIP:906  size=476 bytes
+[libx264 @ 0x7f8984026600] frame=  24 QP=7.26 NAL=2 Slice:P Poc:50  I:7    P:137  SKIP:868  size=1936 bytes
+[libx264 @ 0x7f8984026600] frame=  25 QP=19.87 NAL=0 Slice:B Poc:48  I:0    P:29   SKIP:976  size=438 bytes
+[libx264 @ 0x7f8984026600] frame=  26 QP=7.61 NAL=2 Slice:P Poc:58  I:3    P:82   SKIP:927  size=1245 bytes
+[libx264 @ 0x7f8984026600] frame=  27 QP=19.04 NAL=2 Slice:B Poc:54  I:1    P:26   SKIP:979  size=415 bytes
+[libx264 @ 0x7f8984026600] frame=  28 QP=19.68 NAL=0 Slice:B Poc:52  I:4    P:21   SKIP:985  size=242 bytes
+[libx264 @ 0x7f8984026600] frame=  29 QP=20.62 NAL=0 Slice:B Poc:56  I:0    P:26   SKIP:984  size=312 bytes
+[libx264 @ 0x7f8984026600] frame=  30 QP=5.69 NAL=2 Slice:P Poc:66  I:3    P:646  SKIP:363  size=8655 bytes
+[libx264 @ 0x7f8984026600] frame=  31 QP=18.06 NAL=2 Slice:B Poc:62  I:2    P:205  SKIP:800  size=544 bytes
+[libx264 @ 0x7f8984026600] frame=  32 QP=20.38 NAL=0 Slice:B Poc:60  I:0    P:307  SKIP:701  size=508 bytes
+[libx264 @ 0x7f8984026600] frame=  33 QP=18.67 NAL=0 Slice:B Poc:64  I:2    P:165  SKIP:842  size=498 bytes
+[libx264 @ 0x7f8984026600] frame=  34 QP=4.77 NAL=2 Slice:P Poc:74  I:3    P:813  SKIP:196  size=14662 bytes
+[libx264 @ 0x7f8984026600] frame=  35 QP=16.63 NAL=2 Slice:B Poc:70  I:3    P:157  SKIP:846  size=566 bytes
+[libx264 @ 0x7f8984026600] frame=  36 QP=13.21 NAL=0 Slice:B Poc:68  I:1    P:261  SKIP:743  size=577 bytes
+[libx264 @ 0x7f8984026600] frame=  37 QP=16.74 NAL=0 Slice:B Poc:72  I:8    P:130  SKIP:870  size=360 bytes
+[libx264 @ 0x7f8984026600] frame=  38 QP=4.51 NAL=2 Slice:P Poc:82  I:0    P:537  SKIP:475  size=7725 bytes
+[libx264 @ 0x7f8984026600] frame=  39 QP=13.47 NAL=2 Slice:B Poc:78  I:2    P:254  SKIP:747  size=793 bytes
+[libx264 @ 0x7f8984026600] frame=  40 QP=17.80 NAL=0 Slice:B Poc:76  I:1    P:180  SKIP:824  size=557 bytes
+[libx264 @ 0x7f8984026600] frame=  41 QP=17.53 NAL=0 Slice:B Poc:80  I:0    P:49   SKIP:958  size=569 bytes
+[libx264 @ 0x7f8984026600] frame=  42 QP=4.19 NAL=2 Slice:P Poc:86  I:0    P:335  SKIP:677  size=4048 bytes
+[libx264 @ 0x7f8984026600] frame=  43 QP=13.88 NAL=0 Slice:B Poc:84  I:2    P:187  SKIP:816  size=533 bytes
+[libx264 @ 0x7f8984026600] frame=  44 QP=4.06 NAL=2 Slice:P Poc:94  I:8    P:148  SKIP:856  size=2872 bytes
+[libx264 @ 0x7f8984026600] frame=  45 QP=14.68 NAL=2 Slice:B Poc:90  I:1    P:92   SKIP:913  size=539 bytes
+[libx264 @ 0x7f8984026600] frame=  46 QP=13.59 NAL=0 Slice:B Poc:88  I:0    P:106  SKIP:901  size=524 bytes
+[libx264 @ 0x7f8984026600] frame=  47 QP=12.93 NAL=0 Slice:B Poc:92  I:5    P:52   SKIP:949  size=374 bytes
+[libx264 @ 0x7f8984026600] frame=  48 QP=4.14 NAL=2 Slice:P Poc:100 I:9    P:111  SKIP:892  size=2673 bytes
+[libx264 @ 0x7f8984026600] frame=  49 QP=15.48 NAL=2 Slice:B Poc:96  I:0    P:66   SKIP:941  size=553 bytes
+[libx264 @ 0x7f8984026600] frame=  50 QP=14.35 NAL=0 Slice:B Poc:98  I:1    P:54   SKIP:952  size=556 bytes
+[libx264 @ 0x7f8984026600] frame=  51 QP=9.99 NAL=2 Slice:P Poc:108 I:3    P:19   SKIP:990  size=1238 bytes
+[libx264 @ 0x7f8984026600] frame=  52 QP=14.97 NAL=2 Slice:B Poc:104 I:0    P:26   SKIP:985  size=255 bytes
+[libx264 @ 0x7f8984026600] frame=  53 QP=16.69 NAL=0 Slice:B Poc:102 I:4    P:15   SKIP:990  size=285 bytes
+[libx264 @ 0x7f8984026600] frame=  54 QP=14.28 NAL=0 Slice:B Poc:106 I:0    P:13   SKIP:993  size=563 bytes
+[libx264 @ 0x7f8984026600] frame=  55 QP=11.98 NAL=2 Slice:P Poc:116 I:0    P:18   SKIP:994  size=1050 bytes
+[libx264 @ 0x7f8984026600] frame=  56 QP=11.50 NAL=2 Slice:B Poc:112 I:2    P:13   SKIP:985  size=652 bytes
+[libx264 @ 0x7f8984026600] frame=  57 QP=12.97 NAL=0 Slice:B Poc:110 I:0    P:10   SKIP:994  size=596 bytes
+[libx264 @ 0x7f8984026600] frame=  58 QP=9.34 NAL=0 Slice:B Poc:114 I:1    P:9    SKIP:996  size=609 bytes
+[libx264 @ 0x7f8984026600] frame=  59 QP=12.00 NAL=2 Slice:P Poc:118 I:0    P:12   SKIP:1000 size=622 bytes
+[aac @ 0x7f8984033200] Trying to remove 656 more samples than there are in the queue
+frame=   60 fps=0.0 q=-1.0 Lsize=     167kB time=00:00:02.41 bitrate= 566.5kbits/s speed=3.73x    
+video:126kB audio:37kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 1.987261%
+Input file #0 (images/frame_%04d.jpg):
+  Input stream #0:0 (video): 60 packets read (2946779 bytes); 60 frames decoded; 
+  Total: 60 packets (2946779 bytes) demuxed
+Input file #1 (sounds/cc0_24s.wav):
+  Input stream #1:0 (audio): 104 packets read (423360 bytes); 104 frames decoded (105840 samples); 
+  Total: 104 packets (423360 bytes) demuxed
+Output file #0 (outputs/ffmpeg_h264_aac.mp4):
+  Output stream #0:0 (video): 60 frames encoded; 60 packets muxed (129433 bytes); 
+  Output stream #0:1 (audio): 104 frames encoded (105840 samples); 105 packets muxed (38235 bytes); 
+  Total: 165 packets (167668 bytes) muxed
+164 frames successfully decoded, 0 decoding errors
+[AVIOContext @ 0x7f8983702820] Statistics: 60 seeks, 211 writeouts
+[libx264 @ 0x7f8984026600] frame I:1     Avg QP:15.49  size: 20344
+[libx264 @ 0x7f8984026600] frame P:17    Avg QP: 8.56  size:  5380
+[libx264 @ 0x7f8984026600] frame B:42    Avg QP:19.13  size:   403
+[libx264 @ 0x7f8984026600] consecutive B-frames:  3.3%  6.7% 10.0% 80.0%
+[libx264 @ 0x7f8984026600] mb I  I16..4:  3.3% 78.5% 18.3%
+[libx264 @ 0x7f8984026600] mb P  I16..4:  0.1%  0.2%  0.3%  P16..4: 24.8%  1.8%  4.8%  0.0%  0.0%    skip:67.9%
+[libx264 @ 0x7f8984026600] mb B  I16..4:  0.1%  0.1%  0.1%  B16..8:  7.8%  0.4%  0.4%  direct: 0.1%  skip:91.1%  L0:17.8% L1:81.0% BI: 1.2%
+[libx264 @ 0x7f8984026600] final ratefactor: 9.15
+[libx264 @ 0x7f8984026600] 8x8 transform intra:70.5% inter:36.4%
+[libx264 @ 0x7f8984026600] coded y,uvDC,uvAC intra: 80.7% 81.9% 80.0% inter: 5.3% 5.7% 5.4%
+[libx264 @ 0x7f8984026600] i16 v,h,dc,p: 39% 54%  3%  3%
+[libx264 @ 0x7f8984026600] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 34% 13% 16%  5%  6%  8%  5%  9%  5%
+[libx264 @ 0x7f8984026600] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 40% 18% 11%  6%  6%  7%  5%  5%  3%
+[libx264 @ 0x7f8984026600] i8c dc,h,v,p: 41% 19% 33%  8%
+[libx264 @ 0x7f8984026600] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x7f8984026600] ref P L0: 93.9%  1.0%  4.0%  1.2%
+[libx264 @ 0x7f8984026600] ref B L0: 75.0% 19.3%  5.8%
+[libx264 @ 0x7f8984026600] ref B L1: 86.1% 13.9%
+[libx264 @ 0x7f8984026600] kb/s:429.09
+[aac @ 0x7f8984033200] Qavg: 840.594
+[AVIOContext @ 0x7f8983604ac0] Statistics: 523492 bytes read, 3 seeks

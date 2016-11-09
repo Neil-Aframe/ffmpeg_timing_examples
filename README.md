@@ -27,7 +27,7 @@ not factored out to shared code at this time.
 
 ## ffmpeg version
 
-This version was used to create samples in the repository. I have confirmed similar faults in earlier versions 2.7.2 and 2.1.3
+This version was used to create samples in the repository.
 
 ```
 ffmpeg version 3.2 Copyright (c) 2000-2016 the FFmpeg developers
@@ -43,6 +43,33 @@ ffmpeg version 3.2 Copyright (c) 2000-2016 the FFmpeg developers
   libswresample   2.  3.100 /  2.  3.100
   libpostproc    54.  1.100 / 54.  1.100
 ```
+
+I have also confirmed the same results with latest dev version, installed using Homebrew:
+
+```
+brew install ffmpeg --with-fdk-aac --with-sdl2 --with-freetype --with-libass --with-libquvi --with-libvorbis --with-libvpx --with-opus --with-x265 --HEAD
+```
+
+Which outputs version data:
+
+```
+ffmpeg version git-2016-11-08-1bbb18f Copyright (c) 2000-2016 the FFmpeg developers
+  built with Apple LLVM version 7.0.2 (clang-700.1.81)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/HEAD-1bbb18f --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-libass --enable-libfdk-aac --enable-libfreetype --enable-libmp3lame --enable-libopus --enable-libvorbis --enable-libvpx --enable-libx264 --enable-libx265 --enable-libxvid --enable-opencl --disable-lzma --enable-nonfree --enable-vda
+  libavutil      55. 35.100 / 55. 35.100
+  libavcodec     57. 66.101 / 57. 66.101
+  libavformat    57. 57.100 / 57. 57.100
+  libavdevice    57.  2.100 / 57.  2.100
+  libavfilter     6. 66.100 /  6. 66.100
+  libavresample   3.  2.  0 /  3.  2.  0
+  libswscale      4.  3.100 /  4.  3.100
+  libswresample   2.  4.100 /  2.  4.100
+  libpostproc    54.  2.100 / 54.  2.100
+```
+
+The file ffmpeg-20161109-161805.log is from the above git-2016-11-08-1bbb18f version.
+
+I have also confirmed similar faults in earlier versions 2.7.2 and 2.1.3
 
 ## ffmbc version
 
