@@ -55,8 +55,6 @@ Copyright (c) 2008-2014 Baptiste Coudurier and the FFmpeg developers
 
 ## LICENSE
 
-(c) Neil Slater, for Excession Technologies Limited
-
-All code may be used under MIT license.
+All code may be used under MIT license. See LICENSE.txt
 
 Images and audio used to create test clips are public domain: https://creativecommons.org/publicdomain/zero/1.0/
