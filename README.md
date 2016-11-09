@@ -75,7 +75,7 @@ ffmpeg version git-2016-11-08-1bbb18f Copyright (c) 2000-2016 the FFmpeg develop
 
 The file ffmpeg-20161109-161805.log is from the above git-2016-11-08-1bbb18f version.
 
-I have also confirmed similar faults in earlier versions 2.7.2 and 2.1.3
+I have also confirmed a very similar fault, perhaps the same issue, in earlier versions 2.7.2 and 2.1.3
 
 ## ffmbc version
 
