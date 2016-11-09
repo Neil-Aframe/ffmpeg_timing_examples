@@ -4,8 +4,8 @@ I am sharing these as part of a bug report. I am faced with some subtle but pers
 videos for a web site using ffmpeg, to h264, aac, mp4. 
 
 Typically output videos have a change to duration (all durations were confirmed with ffprobe - other tools may give
-more details, including duration per stream, offsets in container etc), which increases by around a half frame
-(e.g. 0.02s for a 25fps input). Also when played back in HTML5 player, the videos will seek inaccurately,
+more details, including duration per stream, offsets in container etc), which increases by a small amound
+(e.g. 0.02s or 0.04s for example inputs here). Also when played back in HTML5 player, the videos will seek inaccurately,
 usually lagging behind expected display by one frame. It
 is the second issue which is more serious to the work I am attempting, but the duration glitch might be a clue as to
 what is going on.
