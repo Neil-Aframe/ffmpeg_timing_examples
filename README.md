@@ -1,6 +1,6 @@
 # Some ffmpeg timing oddities 
 
-I am sharing these as part of a bug report. I am faced with odd timing issues when transcoding
+I am sharing these as part of a bug report. I am faced with some subtle but persistent timing issues when transcoding
 videos for a web site using ffmpeg, to h264, aac, mp4. 
 
 Typically output videos have a change to duration (all durations were confirmed with ffprobe - other tools may give
@@ -24,6 +24,10 @@ These shell scripts are the commands used to create the video files, and check d
 Each file is a small test harness for one of the playable output videos, with a summary of results and a player window with
 javascript that attempts to seek to specific frames. The javascript and HTML is identical in each file for the seek code, but
 not factored out to shared code at this time.
+
+### .log file
+
+The file ffmpeg-20161109-161805.log is an example log from the "most broken" output file.
 
 ## ffmpeg version
 
