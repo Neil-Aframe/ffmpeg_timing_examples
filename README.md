@@ -92,4 +92,7 @@ Copyright (c) 2008-2014 Baptiste Coudurier and the FFmpeg developers
 
 All code may be used under MIT license. See LICENSE.txt
 
-Images and audio used to create test clips are public domain: https://creativecommons.org/publicdomain/zero/1.0/
+Contents or images and sounds directories are public domain: https://creativecommons.org/publicdomain/zero/1.0/
+
+Clips under input directory are (c) Excession Technologies Limited, and usable under Creative Commons Non-Commercial,
+No Derivative Works license: https://creativecommons.org/licenses/by-nc-nd/4.0/
