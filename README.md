@@ -1,7 +1,9 @@
 # Some ffmpeg timing oddities 
 
 I am sharing these as part of a bug report. I am faced with some subtle but persistent timing issues when transcoding
-videos for a web site using ffmpeg, to h264, aac, mp4. 
+videos for a web site using ffmpeg, to h264, aac, mp4.
+
+FFMPEG support ticket: https://trac.ffmpeg.org/ticket/5935
 
 Typically output videos have a change to duration (all durations were confirmed with ffprobe - other tools may give
 more details, including duration per stream, offsets in container etc), which increases by a small amount
