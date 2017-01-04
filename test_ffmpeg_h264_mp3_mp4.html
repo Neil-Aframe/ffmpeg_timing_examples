@@ -17,7 +17,7 @@ function seekToFrame( frame, framerate ) {
 
 <pre>ffmpeg -y -framerate 25 -start_number 0 -i images/frame_%04d.jpg -i sounds/cc0_24s.wav -f mp4 -c:v libx264 -pix_fmt yuv420p -vb 1M -c:a mp3 -t 2.40 ffmpeg_h264_mp3.mp4</pre>
 
-<p>Duration test: FAIL. The video has unexpected duration of 2.42s<br/>
+<p>Duration test: FAIL. The video has unexpected duration of 2.43s<br/>
 Seek test: FAIL. Player seeks to one frame before expected frame.</p>
 
 <video controls autoplay
