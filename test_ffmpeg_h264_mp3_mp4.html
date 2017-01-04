@@ -1,0 +1,50 @@
+<html><head><title>Test Video</title>
+<script type="text/javascript">
+function seekToFrame( frame, framerate ) {
+    if ( ! framerate ) {
+        framerate = 25;
+    }
+    eps = 0.001;
+    player = document.getElementById('player');
+    player.currentTime = eps + frame/framerate;
+}
+</script>
+
+</head>
+<body>
+
+<h2>ffmpeg_h264_mp3.mp4</h2>
+
+<pre>ffmpeg -y -framerate 25 -start_number 0 -i images/frame_%04d.jpg -i sounds/cc0_24s.wav -f mp4 -c:v libx264 -pix_fmt yuv420p -vb 1M -c:a mp3 -t 2.40 ffmpeg_h264_mp3.mp4</pre>
+
+<p>Duration test: FAIL. The video has unexpected duration of 2.42s<br/>
+Seek test: FAIL. Player seeks to one frame before expected frame.</p>
+
+<video controls autoplay
+       id="player"
+       src="file:./outputs/ffmpeg_h264_mp3.mp4"
+       width="600"
+       height="420"
+>
+</video>
+
+<p>Seek to frame:
+<a href="#" onclick="seekToFrame( 0 );return true;" >00:00:00:00</a>,
+<a href="#" onclick="seekToFrame( 1 );return true;" >00:00:00:01</a>,
+<a href="#" onclick="seekToFrame( 2 );return true;" >00:00:00:02</a>,
+<a href="#" onclick="seekToFrame( 3 );return true;" >00:00:00:03</a>,
+<a href="#" onclick="seekToFrame( 4 );return true;" >00:00:00:04</a>,
+<a href="#" onclick="seekToFrame( 5 );return true;" >00:00:00:05</a>,
+<a href="#" onclick="seekToFrame( 10 );return true;" >00:00:00:10</a>,
+<a href="#" onclick="seekToFrame( 15 );return true;" >00:00:00:15</a><br/>,
+<a href="#" onclick="seekToFrame( 20 );return true;" >00:00:00:20</a>,
+<a href="#" onclick="seekToFrame( 24 );return true;" >00:00:00:24</a>,
+<a href="#" onclick="seekToFrame( 25 );return true;" >00:00:01:00</a>,
+<a href="#" onclick="seekToFrame( 26 );return true;" >00:00:01:01</a>,
+<a href="#" onclick="seekToFrame( 40 );return true;" >00:00:01:15</a>,
+<a href="#" onclick="seekToFrame( 45 );return true;" >00:00:01:20</a>,
+<a href="#" onclick="seekToFrame( 49 );return true;" >00:00:01:24</a>
+</p>
+
+</body>
+</html>
