@@ -94,5 +94,5 @@ All code may be used under MIT license. See LICENSE.txt
 
 Contents or images and sounds directories are public domain: https://creativecommons.org/publicdomain/zero/1.0/
 
-Clips under input directory are (c) Excession Technologies Limited, and usable under Creative Commons Non-Commercial,
+Clips under input directory are (c) Neil Slater, and usable under Creative Commons Non-Commercial,
 No Derivative Works license: https://creativecommons.org/licenses/by-nc-nd/4.0/
